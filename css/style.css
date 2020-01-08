@@ -11,15 +11,50 @@ html {
 :root {
   --green-color: #4b9618;
   --text-color: black;
+  --creme-color: #eceade;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern";
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.5;
 }
 
 body {
-  font-family: "Quicksand", sans-serif;
-  line-height: 1.5;
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merienda", cursive;
+  color: var(--green-color);
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Buttons */
+.btn__green {
+  padding: 12.5px 20px;
+  border-radius: 45px;
+  background-color: var(--green-color);
+  color: #ffffff;
+  border: 2px solid #4b9618;
+  font-weight: 700;
+}
+
+.btn__green:hover {
+  background-color: #ffffff;
+  color: var(--green-color);
 }
 
 /* Navigation */
@@ -66,16 +101,17 @@ body {
 .landing {
   background: url(../img/pickwickgoedemiddag.jpg) no-repeat center center/cover;
   height: 80vh;
-  padding: 100px;
+  padding: 1% 10%;
 }
 
 .landing::after {
   content: "";
   display: block;
   height: 250px;
-  width: 120%;
-  margin-left: -10%;
+  width: 130%;
+  margin: 6% 0 0 -15%;
   z-index: 2;
+  padding: 0;
   background-image: url(https://www.pickwick.nl/siteassets/_new/iconselements/masks/header-mask.svg);
   background-size: contain;
   background-position: bottom;
@@ -107,4 +143,74 @@ body {
   font-weight: 500;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
   color: #ffffff;
+}
+
+/* Section: New product */
+.product__new {
+  padding: 10%; /* Percentage's gebruikt voor betere overgang naar mobile */
+}
+
+.product__container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5%;
+}
+
+.product__new .product__container .product__info p {
+  margin-bottom: 50px;
+}
+
+.product__new .product__container img {
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Section: Favorite tastes */
+.productrange {
+  padding: 1% 10%;
+}
+
+.productrange .productrange__title {
+  font-size: 40px;
+  text-align: center;
+}
+
+.productrange .productrange__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5%;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--creme-color);
+}
+
+.productrange .productrange__container .product {
+  text-align: center;
+}
+
+.productrange .productrange__container .product__image {
+  height: 250px;
+  display: grid;
+  transition: transform 0.35s ease;
+  transform: translateY(0);
+  will-change: transform;
+}
+
+.productrange .productrange__container .product__image:hover {
+  padding-bottom: 10px;
+}
+
+.productrange .productrange__container .product img {
+  max-width: 180px;
+  max-height: 220px;
+  align-self: end;
+  justify-self: center;
+  padding-bottom: 25px;
+}
+
+.productrange .productrange__container .product .product__title {
+  display: block;
+  color: black;
+  font-size: 21px;
 }
