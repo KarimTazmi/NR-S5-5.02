@@ -1,0 +1,130 @@
+.large__heading {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+/* Navigation */
+.nav__main {
+  height: auto;
+  padding: 5% auto; /* Percentage's gebruikt voor betere overgang naar mobile */
+  max-width: 100%;
+}
+
+.nav__main .nav__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.nav__main .nav__container .nav__logo {
+  grid-row: 1 / span 2;
+}
+
+/* Section: Landing */
+.landing {
+  background: url(../img/Landing-image-cut.png) no-repeat bottom center/cover
+    contain;
+}
+
+.landing .landing__container {
+  padding-top: 10%;
+  display: contents;
+}
+
+.landing .landing__container img {
+  height: auto;
+  width: 250px;
+}
+
+.landing .landing__container p {
+  font-size: 18px;
+  max-width: auto;
+}
+
+/* Section: New product */
+.product__container {
+  display: block;
+}
+
+.product__new .product__container img {
+  width: 90%;
+  margin-top: 50px;
+}
+
+/* Section: Favorite tastes */
+/* Leaves left*/
+.leaves-left {
+  display: none;
+}
+
+.leaves-right {
+  display: none;
+}
+
+.productrange .productrange__container {
+  display: contents;
+  max-width: 100%;
+}
+
+.productrange .productrange__container .product:nth-child(1) {
+  margin-bottom: 40px;
+}
+
+.productrange .productrange__container .product:nth-child(2) {
+  display: none;
+}
+
+.productrange .productrange__container .product:nth-child(3) {
+  display: none;
+}
+
+.productrange .productrange__container .product:nth-child(4) {
+  display: none;
+}
+
+.productrange .btn__green {
+  grid-column: none;
+  margin-top: 30px;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+/* Section: Inspiration */
+.inspiration {
+  margin: 0 auto;
+}
+
+.inspiration__container {
+  display: contents;
+  grid-gap: 0;
+}
+
+.inspiration .inspiration__card {
+  margin-bottom: 40px;
+  margin-right: 30px;
+}
+
+.inspiration .inspiration__container .inspiration__card .inspiration__img {
+  height: 250px;
+}
+
+/* Section: Newsletter */
+.newsletter {
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.newsletter h2 {
+  color: #ffffff;
+}
+
+/* Footer */
+.footer {
+  padding: auto;
+  width: 100%;
+}
+
+.footer__container-1 {
+  display: contents;
+}

@@ -7,6 +7,11 @@
     <title>Pickwick</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="css/mobile.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
       rel="stylesheet"
     />
@@ -62,7 +67,7 @@
     </section>
 
     <!-- Section: Favorite tastes -->
-    <h2 class="productrange__title">Onze favoriete smaken</h2>
+    <h2 class="large__heading">Onze favoriete smaken</h2>
 
     <div class="leaves-left">
       <img src="img/leave-large2.png" alt="" class="leaf-1" />
@@ -119,6 +124,7 @@
       <img src="img/leave-medium2.png" alt="" class="leaf-2" />
       <img src="img/leave-small2.png" alt="" class="leaf-3" />
     </div>
+    
     <!-- Section: Tea Topics-->
     <section class="product__new">
       <div class="product__container">
@@ -138,7 +144,7 @@
     </section>
 
     <!-- Section: Inspiration -->
-    <h2 class="productrange__title">Laat je inspireren</h2>
+    <h2 class="large__heading">Laat je inspireren</h2>
     <section class="inspiration">
       <div class="inspiration__container">
         <div class="inspiration__card">
@@ -199,13 +205,7 @@
             nieuwe producten en leuke evenementen van Pickwick.
           </p>
           <form action="" method="get">
-            <input
-              type="radio"
-              class="geslacht"
-              name="man"
-              value="Dhr."
-              checked
-            />
+            <input type="radio" class="geslacht" name="man" value="Dhr." />
             <label for="man">Dhr.</label>
             <input type="radio" class="geslacht" name="vrouw" value="Mvr." />
             <label for="vrouw">Mvr.</label>
@@ -222,6 +222,8 @@
                 id="achternaam"
                 placeholder="Voornaam"
               />
+            </div>
+            <div class="form__mail">
               <input
                 type="text"
                 name="mail"
