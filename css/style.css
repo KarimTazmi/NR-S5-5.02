@@ -198,6 +198,7 @@ a {
 .productrange .productrange__container .product .product__title {
   color: black;
   font-size: 21px;
+  font-family: "Merienda", cursive;
 }
 
 .productrange .btn__green {
@@ -208,4 +209,87 @@ a {
 .topics__img {
   width: 500px;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Section: Inspiration */
+.inspiration {
+  padding: 5% 10%;
+}
+
+.inspiration .inspiration__card {
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+}
+
+.inspiration__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5%;
+}
+
+.inspiration .inspiration__container .inspiration__card .inspiration__img {
+  height: 300px;
+}
+
+.inspiration__link {
+  color: var(--green-color);
+  font-weight: 700;
+}
+
+.inspiration__link::after {
+  content: " \f054";
+}
+
+/* Section: Newsletter */
+.newsletter {
+  background: url(../img/pickwicknieuwsbriefnieuw1.jpg) no-repeat bottom
+    center/cover;
+  height: 100vh;
+  padding: 5% 10%;
+}
+
+.newsletter .newsletter__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.newsletter .newsletter__container .newsletter__items {
+  grid-column: 1 / span 1;
+}
+
+.newsletter .newsletter__container .newsletter__items .geslacht {
+  width: 30px;
+  height: 30px;
+  line-height: 35px;
+  font-size: 30px;
+  background-size: 16px 12px;
+}
+
+.newsletter
+  .newsletter__container
+  .newsletter__items
+  .newsletter__form-naam
+  input {
+  height: 50px;
+  background: white;
+  opacity: 0.5;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  margin: 0 20px 20px 0;
+  width: 150px;
+  display: inline-block;
+}
+
+.newsletter .newsletter__container .newsletter__items .newsletter__age p,
+.newsletter .newsletter__container .newsletter__items .newsletter__options p {
+  background: white;
+  opacity: 0.5;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  padding: 20px;
+  display: inline-block;
 }
