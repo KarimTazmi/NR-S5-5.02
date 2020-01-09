@@ -152,6 +152,37 @@ a {
 }
 
 /* Section: Favorite tastes */
+/* Leaves left*/
+.leaves-left {
+  float: left;
+  margin-left: 50px;
+}
+
+.leaves-right {
+  float: right;
+  margin-left: 50px;
+}
+
+.leaf-1,
+.leaf-2,
+leaf-3 {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.leaf-1 {
+  margin-left: 30px;
+  margin-top: -80px;
+}
+
+.leaf-2 {
+  margin-left: -70px;
+}
+
+.leaf-3 {
+  margin-left: 30px;
+}
+
 .productrange {
   padding: 5% 10%;
   background-image: url(../img/Background-circle.svg);
@@ -292,4 +323,45 @@ a {
   outline: none;
   padding: 20px;
   display: inline-block;
+}
+
+/* Footer */
+.footer {
+  padding: 5% 10%;
+}
+
+.footer__container-1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.footer__container-1 .footer__item ul {
+  list-style: none;
+  padding-inline-start: 0;
+  margin-bottom: 50px;
+}
+
+.footer__container-1 .footer__item ul li {
+  margin-bottom: 10px;
+}
+
+.footer__container-1 .footer__item ul li a {
+  color: black;
+}
+
+.footer__container-2 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  font-size: 14px;
+}
+
+.footer .footer__container-1 .footer__social i {
+  color: var(--green-color);
+  margin-right: 10px;
+}
+
+.footer__container-2 a {
+  color: black;
 }
